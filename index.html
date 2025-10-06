@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Abubakar - Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      background: #fff;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 2px solid #004aad;
+      padding-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .header img {
+      width: 120px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 3px solid #004aad;
+      box-shadow: 0 0 8px rgba(0,74,173,0.5);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .header img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0,74,173,0.7);
+    }
+
+    .header-text {
+      flex: 1;
+    }
+
+    .header-text h1 {
+      font-size: 1.8rem;
+      color: #004aad;
+      margin-bottom: 5px;
+    }
+
+    .header-text p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    h2 {
+      color: #004aad;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #004aad;
+      display: inline-block;
+      padding-bottom: 3px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 40px;
+      margin-top: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #004aad;
+      color: white;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    /* Toggle Button */
+    .theme-toggle {
+      background-color: #004aad;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      float: right;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .theme-toggle:hover {
+      background-color: #0066ff;
+    }
+
+    /* Dark Mode */
+    body.dark-mode {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+
+    body.dark-mode .container {
+      background-color: #1f1f1f;
+      box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+    }
+
+    body.dark-mode h2, 
+    body.dark-mode .header-text h1 {
+      color: #66aaff;
+    }
+
+    body.dark-mode th {
+      background-color: #0077ff;
+    }
+
+    body.dark-mode .theme-toggle {
+      background-color: #222;
+      color: #fff;
+      border: 1px solid #555;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      body {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+  <div class="container">
+    <div class="header">
+      <img src="Images/Photo.jpg" alt="Muhammad Abubakar Photo">
+      <div class="header-text">
+        <h1>Muhammad Abubakar</h1>
+        <p><strong>Phone:</strong> +92-329-9456900</p>
+        <p><strong>Email:</strong> Bakar285913@gmail.com</p>
+        <p><strong>Address:</strong> St. no. 18, Garjak, GRW</p>
+      </div>
+    </div>
+
+    <h2>Objective</h2>
+    <p><em>“Success doesn’t come to you — you go to it.”</em>  
+    I’m a passionate learner who thrives in a dynamic and challenging environment.  
+    My goal is to contribute effectively while continuously improving my technical and personal skills.</p>
+
+    <h2>Personal Information</h2>
+    <div class="info-grid">
+      <div><strong>Father’s Name:</strong> Muhammad Akbar</div>
+      <div><strong>CNIC:</strong> 34101-1004918-5</div>
+      <div><strong>Date of Birth:</strong> 01-12-2005</div>
+      <div><strong>Domicile:</strong> Gujranwala (Punjab)</div>
+      <div><strong>Nationality:</strong> Pakistani</div>
+      <div><strong>Religion:</strong> Islam</div>
+    </div>
+
+    <h2>Academic Qualification</h2>
+    <table>
+      <tr>
+        <th>Degree</th>
+        <th>Board/University</th>
+        <th>Year</th>
+        <th>Marks/GPA</th>
+      </tr>
+      <tr>
+        <td>Matriculation</td>
+        <td>Gujranwala Board</td>
+        <td>2022</td>
+        <td>952/1100</td>
+      </tr>
+      <tr>
+        <td>Intermediate</td>
+        <td>Gujranwala Board</td>
+        <td>2024</td>
+        <td>952/1100</td>
+      </tr>
+      <tr>
+        <td>BS</td>
+        <td>UET Lahore</td>
+        <td>(Completed in 2028)</td>
+        <td>-</td>
+      </tr>
+    </table>
+
+    <h2>Computer Skills</h2>
+    <ul>
+      <li>MS Office (Word, Excel, PowerPoint)</li>
+      <li>Object-Oriented Programming (C#)</li>
+      <li>Database Management (Oracle)</li>
+      <li>Front-end Development (HTML, CSS)</li>
+      <li>Strong command on C++</li>
+    </ul>
+
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Reading Books</li>
+      <li>Playing Cricket</li>
+      <li>Watching Movies</li>
+    </ul>
+
+    <h2>Reference</h2>
+    <p>Reference will be furnished on demand.</p>
+  </div>
+
+  <script>
+    const body = document.body;
+    const btn = document.querySelector('.theme-toggle');
+
+    // Check saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark-mode');
+      btn.textContent = "☀️ Light Mode";
+    }
+
+    function toggleTheme() {
+      body.classList.toggle('dark-mode');
+      if (body.classList.contains('dark-mode')) {
+        btn.textContent = "☀️ Light Mode";
+        localStorage.setItem('theme', 'dark');
+      } else {
+        btn.textContent = "🌙 Dark Mode";
+        localStorage.setItem('theme', 'light');
+      }
+    }
+  </script>
+</body>
+</html>
